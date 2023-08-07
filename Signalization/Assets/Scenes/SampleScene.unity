@@ -251,8 +251,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1057108586}
-        m_TargetAssemblyTypeName: Fading, Assembly-CSharp
-        m_MethodName: Alarm
+        m_TargetAssemblyTypeName: Alarm, Assembly-CSharp
+        m_MethodName: Signalize
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1025,7 +1025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96f18c8170b4d7949a03da077eb25821, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _entering: {fileID: 101132363}
+  _eventOfEntering: {fileID: 0}
   _switchedOnAlarmColor: {r: 1, g: 0, b: 0, a: 1}
   _switchedOffAlarmColor: {r: 1, g: 1, b: 1, a: 1}
   _durationOfSwitchingColor: 2
@@ -1220,7 +1220,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1817410402}
   - component: {fileID: 1817410401}
-  - component: {fileID: 1817410400}
+  - component: {fileID: 1817410406}
   - component: {fileID: 1817410405}
   - component: {fileID: 1817410404}
   - component: {fileID: 1817410403}
@@ -1231,21 +1231,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1817410400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1817410399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de09956c424cc1547bfc3ff14843e321, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _positionInHouseY: -0.49
-  _positionOutsideY: -6
-  _duration: 6
 --- !u!212 &1817410401
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1372,6 +1357,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.84, y: 1.024}
   m_EdgeRadius: 0
+--- !u!114 &1817410406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1817410399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de09956c424cc1547bfc3ff14843e321, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _positionInHouseY: -0.49
+  _positionOutsideY: -3.85
+  _duration: 6
 --- !u!850595691 &1824553220
 LightingSettings:
   m_ObjectHideFlags: 0
