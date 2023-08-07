@@ -7,7 +7,7 @@ public class Movement : MonoBehaviour
     [SerializeField] private float _positionOutsideY;
     [SerializeField] private int _duration;
 
-    void Start()
+    private void Start()
     {
         Sequence sequence = DOTween.Sequence();
 
