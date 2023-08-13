@@ -14,7 +14,6 @@ public class CircleMovement : MonoBehaviour
 
     private void Update()
     {
-       // transform.position = Vector3.MoveTowards(transform.position.normalized, _direction, _speed);
         transform.Translate(_direction.normalized * _speed * Time.deltaTime);
     }
 }

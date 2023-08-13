@@ -16,8 +16,6 @@ public class CircleInsantiate : MonoBehaviour
         circleMovement.SetDirection(_direction);
     }
 
-   
-
     private void Start()
     {
         _position = GetComponent<Transform>();
