@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class Insantiater : MonoBehaviour
+public class Instantiater : MonoBehaviour
 {
     [SerializeField] private Vector3 _direction;
     [SerializeField] private Transform _position;

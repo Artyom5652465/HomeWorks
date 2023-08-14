@@ -1,16 +1,16 @@
 using UnityEngine;
 
-public class PointSpawner : MonoBehaviour
+public class PointChooser : MonoBehaviour
 {
     [SerializeField] private int _repeats;
     [SerializeField] private int _pause;
 
-    private Insantiater[] _points;
+    private Instantiater[] _points;
     private float _time = 0;
 
     private void Start()
     {
-        _points = GameObject.FindObjectsOfType<Insantiater>();
+        _points = GameObject.FindObjectsOfType<Instantiater>();
     }
 
     private void Update()
