@@ -1,8 +1,6 @@
 using UnityEngine;
 
-[RequireComponent(typeof(Transform))]
-
-public class CircleInsantiate : MonoBehaviour
+public class Insantiater : MonoBehaviour
 {
     [SerializeField] private Vector3 _direction;
     [SerializeField] private Transform _position;
@@ -14,10 +12,5 @@ public class CircleInsantiate : MonoBehaviour
 
         CircleMovement circleMovement = circle.GetComponent<CircleMovement>();
         circleMovement.SetDirection(_direction);
-    }
-
-    private void Start()
-    {
-        _position = GetComponent<Transform>();
     }
 }

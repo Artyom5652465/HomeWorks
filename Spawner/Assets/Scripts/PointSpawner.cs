@@ -5,15 +5,15 @@ public class PointSpawner : MonoBehaviour
     [SerializeField] private int _repeats;
     [SerializeField] private int _pause;
 
-    private CircleInsantiate[] _points;
+    private Insantiater[] _points;
     private float _time = 0;
 
     private void Start()
     {
-        _points = GameObject.FindObjectsOfType<CircleInsantiate>();
+        _points = GameObject.FindObjectsOfType<Insantiater>();
     }
 
-    void Update()
+    private void Update()
     {
         _time += Time.deltaTime;
 
