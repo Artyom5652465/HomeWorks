@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1963106723295226520}
-  - component: {fileID: 1650252376662572758}
+  - component: {fileID: 324690266048481626}
   m_Layer: 0
   m_Name: Point
-  m_TagString: Untagged
+  m_TagString: Point
   m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32,7 +32,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1650252376662572758
+--- !u!114 &324690266048481626
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -41,9 +41,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1939198739949593770}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69fa0e0b1ceeec943937d612eacba46f, type: 3}
+  m_Script: {fileID: 11500000, guid: 65cdfb02e19e85945b341f8e24238afe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _direction: {x: 8.43, y: 6, z: 4}
-  _position: {fileID: 0}
-  _circle: {fileID: 2542812922704874534, guid: 0bde831270f22534fb1308ddbfc6a87d, type: 3}
+  _direction: {x: 2.3, y: 6, z: 0}

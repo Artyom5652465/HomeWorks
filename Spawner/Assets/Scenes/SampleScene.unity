@@ -318,6 +318,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _repeats: 3
   _pause: 2
+  _circle: {fileID: 2542812922704874534, guid: 0bde831270f22534fb1308ddbfc6a87d, type: 3}
 --- !u!1001 &2137882701
 PrefabInstance:
   m_ObjectHideFlags: 0
