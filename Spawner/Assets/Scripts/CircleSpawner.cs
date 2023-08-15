@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PointSpawner : MonoBehaviour
+public class CircleSpawner : MonoBehaviour
 {
     [SerializeField] private int _repeats;
     [SerializeField] private int _pause;
