@@ -1,35 +1,32 @@
 using UnityEngine;
+using System.Collections;
 
 public class CircleSpawner : MonoBehaviour
 {
-    [SerializeField] private int _repeats;
+    [SerializeField] private int _countRepeats;
     [SerializeField] private int _pause;
-    [SerializeField] private GameObject _circle;
-
-    private GameObject[] _points;
-    private float _time = 0;
+    [SerializeField] private CircleMovement _circleMovement;
+    [SerializeField] private GameObject[] _points;
 
     private void Start()
     {
-        _points = GameObject.FindGameObjectsWithTag("Point");
+        StartCoroutine(MakePause());
     }
 
-    private void Update()
+    private IEnumerator MakePause()
     {
-        _time += Time.deltaTime;
-
-        if (_time >= _pause)
+        for (int i = 0; i < _countRepeats; i++)
         {
-            _time = 0;
+            yield return new WaitForSeconds(_pause);
+
             Spawn(_points[Random.Range(0, _points.Length)]);
         }
     }
 
     private void Spawn(GameObject point)
     {
-        GameObject circle = Instantiate(_circle, point.transform.position, Quaternion.identity);
+        CircleMovement circle = Instantiate(_circleMovement, point.transform.position, Quaternion.identity);
 
-        CircleMovement circleMovement = circle.GetComponent<CircleMovement>();
-        circleMovement.SetDirection(point.GetComponent<Point>().GetDirection());
+        circle.SetDirection(point.GetComponent<Point>().GetDirection());
     }
 }

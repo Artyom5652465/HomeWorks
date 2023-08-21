@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &32155478 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1939198739949593770, guid: f191b342d670eae4da10708ac6cbfb87, type: 3}
+  m_PrefabInstance: {fileID: 2137882701}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &183762120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -183,6 +188,11 @@ PrefabInstance:
 --- !u!4 &183762121 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1963106723295226520, guid: f191b342d670eae4da10708ac6cbfb87, type: 3}
+  m_PrefabInstance: {fileID: 183762120}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &269067685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1939198739949593770, guid: f191b342d670eae4da10708ac6cbfb87, type: 3}
   m_PrefabInstance: {fileID: 183762120}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &519420028
@@ -316,9 +326,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d06c12356a895c4cbe5ec889c81bca6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _repeats: 3
+  _countRepeats: 5
   _pause: 2
-  _circle: {fileID: 2542812922704874534, guid: 0bde831270f22534fb1308ddbfc6a87d, type: 3}
+  _circleMovement: {fileID: 0}
+  _points:
+  - {fileID: 32155478}
+  - {fileID: 269067685}
+  - {fileID: 1537784541}
+--- !u!1 &1537784541 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1939198739949593770, guid: f191b342d670eae4da10708ac6cbfb87, type: 3}
+  m_PrefabInstance: {fileID: 307581336288080882}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2137882701
 PrefabInstance:
   m_ObjectHideFlags: 0
